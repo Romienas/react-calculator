@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Monda:400,700&display=swap');
+
+html {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    font-family: 'Monda', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(-45deg, #4E668E, #91C4D9);
+    height: 100%;
+    overflow: auto;
+    font-family: 'Monda', sans-serif;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: rgba(0,0,0,0.2);
+    @if(color:#4D628D){
+        color: #fff;
+    }
+}
+
+.calculator {
+    font-family: 'Monda', sans-serif;
+    width:300px;
+    height:375px;
+    margin: 150px auto 0;
+    border: 1px solid black;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+.buttons{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-45deg, #556C94, #88B6CD);
+}
+
+.button{
+    font-family: 'Monda', sans-serif;
+    float: left;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #fff;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.1);
+    border-width: thin;
+}
+
+.double-zero {
+    font-family: 'Monda', sans-serif;
+    float: left;
+    width: 150px;
+    height: 75px;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: #fff;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.1);
+    border-width: thin;
+}
+
+.white {
+    background-color: #fff;
+    color: #4D628D;
+}
+
+.equal {
+    background-color: #4D628D;
+}
+
+.bigger {
+    font-size: 2em;
+}

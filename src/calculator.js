@@ -5,7 +5,7 @@ import Buttons from './buttons';
 class Calculator extends React.Component {
     render(){
         return (
-            <div>
+            <div className='calculator'>
                 <Buttons />
             </div>
         )
