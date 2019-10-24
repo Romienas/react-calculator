@@ -7,6 +7,14 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 class Screen extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            number: this.props.pressNumber,
+            operator: '',
+            equal: 0
+        }
+    }
     render(){
         return(
             <div className='screen'>
@@ -21,9 +29,13 @@ class Screen extends React.Component {
                         <FontAwesomeIcon className='fa-font' icon={faExpandArrowsAlt} />
                     </div>
                 </div>
-                <div className='calculation'>1.764 / 14</div>
+
+                <div className='calculation'>
+                    {this.props.pressNumber}
+                </div>
+
                 <div className='equal-sign'>=</div>
-                <div className='result'>0.126</div>
+                <div className='result'>{this.state.equal}</div>
             </div>
         )
     }
